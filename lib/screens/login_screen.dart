@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
+  static String id = 'LoginScreen';
   @override
   _LoginScreenState createState() => _LoginScreenState();
 }
@@ -18,7 +19,7 @@ class _LoginScreenState extends State<LoginScreen> {
           children: <Widget>[
             Container(
               height: 200.0,
-              child: Image.asset('images/logo.png'),
+              child: Image.asset('images/chat-logo.png'),
             ),
             SizedBox(
               height: 48.0,
