@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 import '../screens/login_screen.dart';
 import '../screens/registration_screen.dart';
 
@@ -60,13 +61,20 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                   ),
                 ),
                 Expanded(
-                  child: Text(
-                    'Close Chat',
-                    style: TextStyle(
-                      fontSize: 45.0,
-                      fontWeight: FontWeight.w900,
-                    ),
-                  ),
+                  child: ColorizeAnimatedTextKit(
+                      text: ['Close Chat'],
+                      textStyle: TextStyle(
+                        fontSize: 45.0,
+                        fontWeight: FontWeight.w900,
+                      ),
+                      colors: [
+                        Colors.purple,
+                        Colors.blue,
+                        Colors.yellow,
+                        Colors.red,
+                      ],
+                      textAlign: TextAlign.start,
+                      alignment: AlignmentDirectional.topStart),
                 ),
               ],
             ),
