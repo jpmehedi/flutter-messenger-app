@@ -18,6 +18,11 @@ const kMessageContainerDecoration = BoxDecoration(
   ),
 );
 
+const kButtonTextStyle = TextStyle(
+  color: Colors.white,
+  fontSize: 18,
+);
+
 const kInputFieldDecoration = InputDecoration(
   hintText: 'Enter your password.',
   contentPadding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
